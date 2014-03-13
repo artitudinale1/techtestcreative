@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+	 <!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+
+</head>
+ <body>
+		<h2>Alex Garulli - Creative</h2>
+		<div class="container">
+		
+		  <!-- FRIENDS -->
+		  <section id="friend_tab" >
+		      <h2 onclick = "counterFriends('friend')"><span><a href="#friend_tab" >Friends</a></span></h2>
+		      <div class="round" id="friend"></div>
+		  </section>
+
+		  <!-- VIDEO -->
+		  <section id="video_tab">
+		      <h2 onclick = "counterVideo('video_counter')"><a href="#video_tab"> Video</a></h2>
+		      <div class="round" id="video_counter"></div>
+		  </section>
+
+		  <!-- GALLERY -->		  
+		  <section id="galleries_tab">
+		      <h2  onclick = "counterGalleries('galleries')"><a href="#galleries_tab">Galleries</a></h2>
+		      				<div class="round" id="galleries"></div>
+		      			 <h2><a href="#">Cute Kittens</a></h2><div class="round"></div>
+		        		 <h2><a href="#">Strange Stuff</a></h2><div class="round"></div>
+		       			 <h2><a href="#">Automatic Fails</a></h2><div class="round"></div>
+		  </section>
+
+		  <!-- PODCAST -->		 
+		  <section id="podcast_tab">
+		      <h2 onclick = "counterPodcast('podcast')"><a href="#podcast_tab"  >Podcast</a></h2>
+		     <div class="round" id="podcast"></div>
+		  </section>
+
+		  <!-- ROBOTS -->	 
+		  <section id="robots_tab">
+		      <h2  onclick = "counterRobots('robots') " ><a href="#robots_tab">Robots</a></h2>
+		      <div class="round" id="robots"></div>
+		  </section>
+		</div>
+
+
+<script type ="text/javascript">
+//I wanted to implement click counters for each session - not sure if I could optimise the functions better : I've tried with one counter variable and a resetting but I think I needed anyway different functions for each section
+
+//declaring variables for counters
+			var a = 0;
+			var b = 0;
+			var c = 0;
+			var d = 0;
+			var e = 0;
+//counters
+		function counterFriends (id){
+		a+= 1;
+		 document.getElementById(id ).innerHTML = "<p>"+a+"  </p>";
+
+		}
+		function counterVideo (id){
+		b+= 1;
+		 document.getElementById(id ).innerHTML = "<p>"+b+"  </p>";
+		}
+		function counterGalleries (id){
+		c+= 1;
+		 document.getElementById(id ).innerHTML = "<p>"+c+"  </p>";
+
+		}
+		function counterPodcast (id){
+		d+= 1;
+		 document.getElementById(id ).innerHTML = "<p>"+d+"  </p>";
+		}
+		function counterRobots (id){
+		e+= 1;
+		 document.getElementById(id ).innerHTML = "<p>"+e+"  </p>";
+
+		}
+
+</script>
+	</body>
+</html>
