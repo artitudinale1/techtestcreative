@@ -1,6 +1,6 @@
 #<b>Technical test - Creative</b>#
 
-##<b>BRIEF/BACKGOUND PROJECT</b>##
+##<b>BRIEF/BACKGROUND PROJECT</b>##
 
 This is a technical test I took as part of the recruiment process for an Digital Healcare Company based in London.
 The test had two part :  a creative part and a creation of a validated form I stored in this other repo. https://github.com/artitudinale1/techtestForm
